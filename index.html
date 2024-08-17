@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Specs Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Battery Specs Calculator</h1>
+        <form id="calculatorForm">
+            <label for="voltage">Voltage (V):</label>
+            <input type="number" id="voltage" required>
+
+            <label for="capacity">Capacity (mAh):</label>
+            <input type="number" id="capacity" required>
+
+            <label for="currentDraw">Current Draw (A):</label>
+            <input type="number" id="currentDraw" required>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
